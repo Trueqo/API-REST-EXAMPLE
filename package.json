@@ -1,0 +1,26 @@
+{
+  "name": "api-rest-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trueqo/API-REST-EXAMPLE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trueqo/API-REST-EXAMPLE/issues"
+  },
+  "homepage": "https://github.com/Trueqo/API-REST-EXAMPLE#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
