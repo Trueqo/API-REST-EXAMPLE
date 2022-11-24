@@ -10,7 +10,6 @@ app.use(express.json());
 app.use("/api/v1/workouts", v1WorkoutRouter);
 
 
-
 /*
 app.get('/', (req, res) => {
     res.send('Hello World');

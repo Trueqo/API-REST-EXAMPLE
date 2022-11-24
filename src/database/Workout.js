@@ -5,10 +5,9 @@ const getAllWorkouts = () => {
     return DB.workouts;
 };
 
-const createdWorkout = (newWorkout) => {
-    const isAlreadyAdded = DB.workouts.findIndex(
-        (workout) => workout.name === newWorkout.name
-    );
+const createNewWorkout = (newWorkout) => {
+    const isAlreadyAdded = 
+        DB.workouts.findIndex((workout) => workout.name === newWorkout.name) >-1;
 
     if(isAlreadyAdded){
         return;
@@ -16,8 +15,8 @@ const createdWorkout = (newWorkout) => {
 
     DB.workouts.push(newWorkout);
     saveToDatabase(DB);
+    return newWorkout;
 }
 
 
-
-module.exports = { getAllWorkouts, createdWorkout };
+module.exports = { getAllWorkouts, createNewWorkout };
